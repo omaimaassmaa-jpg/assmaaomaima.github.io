@@ -41,18 +41,6 @@
             align-items: center;
             gap: 10px;
         }
-
-        .icon img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .logo {
-            font-family: Arial, sans-serif;
-            font-size: 25px;
-            color: brown;
-        }
-
         .menu ul {
             display: flex;
             gap: 40px;
@@ -76,6 +64,7 @@
 
         .search {
             display: flex;
+            align-items:center;
             gap: 5px;
         }
 
@@ -83,11 +72,10 @@
             width: 200px;
             height: 40px;
             padding: 10px;
-            font-size: 16px;
             background: transparent;
             border: 1px solid #fff;
             color: #fff;
-            border-radius: 5px;
+            border-radius: 5px 0 0 5px;
         }
 
         .btn {
@@ -97,7 +85,7 @@
             background: rgb(93, 23, 23);
             color: #fff;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 0 5px 5px 0;
         }
 
         .content {
@@ -109,9 +97,14 @@
         }
 
         .content h1 {
-            font-size: 50px;
-            color: aqua;
-            letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: aqua;
+    letter-spacing: 2px;
+    text-align: center;
         }
 
         .content .par {
