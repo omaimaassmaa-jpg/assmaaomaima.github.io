@@ -27,7 +27,7 @@ nav{
 nav img{ 
     float:left;
     width:50px;
-    heght:50px;
+    height:50px;
 }
            
 .nav-links{
@@ -45,7 +45,7 @@ nav img{
   color:brown;
   font-size:20px;
 }
-.nav-links ul li a::after{
+.nav-links ul li:hover a::after{
     content:'';
     width:0%;
     height:2px;
@@ -54,7 +54,7 @@ nav img{
     margin:auto;
     transition:0.5s;
 }
-.nav_links ul li:hover{
+.nav-links ul li:hover{
     width:100%;
 }
 .search-box{
@@ -63,9 +63,10 @@ nav img{
     height:40px;
     border-radius:40px;
     padding:10px;
+    outline:none;
 }
 .srch{
-    background:absolute;
+    background:transparent;
     font-size:18px;
     border:1px solid black;
     
